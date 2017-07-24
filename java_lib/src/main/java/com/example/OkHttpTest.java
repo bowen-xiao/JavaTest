@@ -46,36 +46,12 @@ public class OkHttpTest {
     //抢的车次号 584-1
     static  String mBuyLine = "P38-1";
 
-    /*  TODO
-        小马
-    *   userName	13129587498
-        userId	94015
-        keyCode	143928ec87117ca4de85dc20e5c8a9ad
-        pageNo	1
-        pageSize	5
 
-        userName	17051052812
-        userId	179792
-        keyCode	b20740c94e131278c952dfc62f40a158
-
-        userName	17099946533
-        userId	84276
-        keyCode	313fd9bf5ee0e76921d6b1ae6cbd1ecb
-    * */
     // 1312958账号 小马
-    /*static String mUserId = "94015";
-    static String mPhoneNumber = "13129587498";
-    static String mKeyCode = "143928ec87117ca4de85dc20e5c8a9ad";*/
+    static String mUserId = "94015";
+    static String mPhoneNumber = "手机号码";
+    static String mKeyCode = "143928ec87117ca4de85dc20e5c8a9ad";
 
-    // 1705105账号
-    /*static String mUserId = "179792";
-    static String mPhoneNumber = "17051052812";
-    static String mKeyCode = "b20740c94e131278c952dfc62f40a158";*/
-
-    //170999账号
-    static String mUserId = "84276";
-    static String mPhoneNumber = "17099946533";
-    static String mKeyCode = "844bda7f667fe7d1867596ebf4cc9413";
 
     //抢下个月的票true，还是当前月的票
     static boolean isNextMonth = true;
