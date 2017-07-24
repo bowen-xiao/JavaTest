@@ -6,6 +6,10 @@ dependencies {
     compile files('libs/okio-1.13.0.jar')
     compile files('libs/gson.jar')
 }
+//新版
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
