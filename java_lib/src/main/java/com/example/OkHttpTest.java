@@ -44,14 +44,34 @@ import okio.BufferedSink;
 public class OkHttpTest {
 
     //抢的车次号 584-1
-    static  String mBuyLine = "P38-1";
-
+    //static  String mBuyLine = "P414-1";
 
     // 1312958账号 小马
+//    static  String mBuyLine = "P628-1";
+    static  String mBuyLine = "P414-1";
     static String mUserId = "94015";
-    static String mPhoneNumber = "手机号码";
+    static String mPhoneNumber = "13129587498";
     static String mKeyCode = "143928ec87117ca4de85dc20e5c8a9ad";
 
+    // 1705105账号
+    /*
+    static  String mBuyLine = "P113-1";
+    static String mUserId = "179792";
+    static String mPhoneNumber = "17051052812";
+    static String mKeyCode = "b20740c94e131278c952dfc62f40a158";*/
+
+    //170999账号
+//    static  String mBuyLine = "P414-1";
+//    static String mUserId = "84276";
+//    static String mPhoneNumber = "17099946533";
+//    static String mKeyCode = "844bda7f667fe7d1867596ebf4cc9413";
+
+    //keyCode=a37da0fdf94154e86a1a555ef63d29ca&pageNo=1&pageSize=5&payStatus=2&userId=185707&userName=18718680620
+    //吴雷 584-1
+//    static  String mBuyLine = "584-1";
+//    static String mUserId = "185707";
+//    static String mPhoneNumber = "18718680620";
+//    static String mKeyCode = "a37da0fdf94154e86a1a555ef63d29ca";
 
     //抢下个月的票true，还是当前月的票
     static boolean isNextMonth = true;
@@ -60,7 +80,7 @@ public class OkHttpTest {
     public static void main(String[] args) throws Exception {
         postFrom();
         //查看订单信息
-        //bookEnd();
+//        bookEnd();
     }
 
     static void postData() {
@@ -83,7 +103,6 @@ public class OkHttpTest {
             e.printStackTrace();
         }
     }
-
 
     static void post2() {
         OkHttpClient client = new OkHttpClient();
@@ -124,7 +143,6 @@ public class OkHttpTest {
         }
     }
 
-
     static void postFrom() {
         String url = "http://slb.szebus.net/bc/phone/data";
         Map<String, Object> params = new HashMap<>();
@@ -163,8 +181,6 @@ public class OkHttpTest {
         });
         new NetWorkUtils().postFrom(url, params, callback);
     }
-
-
 
     static SearchResult.ReturnDataBean clickItem;
 
@@ -341,8 +357,6 @@ public class OkHttpTest {
             }
         }
     }
-
-
 
     //去访问网络，订票  414-1 的信息
     private static void bookTickByDate(final String buyDate,final String price) {
