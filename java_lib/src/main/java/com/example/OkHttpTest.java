@@ -48,23 +48,23 @@ public class OkHttpTest {
 
     // 1312958账号 小马
 //    static  String mBuyLine = "P628-1";
-    static  String mBuyLine = "P414-1";
-    static String mUserId = "94015";
-    static String mPhoneNumber = "13129587498";
-    static String mKeyCode = "143928ec87117ca4de85dc20e5c8a9ad";
+////    static  String mBuyLine = "P414-1";
+//    static String mUserId = "94015";
+//    static String mPhoneNumber = "13129587498";
+//    static String mKeyCode = "143928ec87117ca4de85dc20e5c8a9ad";
 
     // 1705105账号
-    /*
-    static  String mBuyLine = "P113-1";
-    static String mUserId = "179792";
-    static String mPhoneNumber = "17051052812";
-    static String mKeyCode = "b20740c94e131278c952dfc62f40a158";*/
+//    static  String mBuyLine = "414-1";
+//    static  String mBuyLine = "P113-1";
+//    static String mUserId = "179792";
+//    static String mPhoneNumber = "17051052812";
+//    static String mKeyCode = "b20740c94e131278c952dfc62f40a158";
 
     //170999账号
-//    static  String mBuyLine = "P414-1";
-//    static String mUserId = "84276";
-//    static String mPhoneNumber = "17099946533";
-//    static String mKeyCode = "844bda7f667fe7d1867596ebf4cc9413";
+    static  String mBuyLine = "P414-1";
+    static String mUserId = "84276";
+    static String mPhoneNumber = "17099946533";
+    static String mKeyCode = "844bda7f667fe7d1867596ebf4cc9413";
 
     //keyCode=a37da0fdf94154e86a1a555ef63d29ca&pageNo=1&pageSize=5&payStatus=2&userId=185707&userName=18718680620
     //吴雷 584-1
@@ -72,6 +72,17 @@ public class OkHttpTest {
 //    static String mUserId = "185707";
 //    static String mPhoneNumber = "18718680620";
 //    static String mKeyCode = "a37da0fdf94154e86a1a555ef63d29ca";
+
+    /*userName	13028929465
+    userId	239455
+    keyCode	8e2a6c49b3d66707a739edfaa9d3e272
+    pageNo	1
+    pageSize	5*/
+    //小马的小号
+//    static  String mBuyLine = "604-1";
+//    static String mUserId = "239455";
+//    static String mPhoneNumber = "13028929465";
+//    static String mKeyCode = "8e2a6c49b3d66707a739edfaa9d3e272";
 
     //抢下个月的票true，还是当前月的票
     static boolean isNextMonth = true;
