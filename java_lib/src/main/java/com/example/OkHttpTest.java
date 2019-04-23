@@ -155,11 +155,15 @@ public class OkHttpTest {
     }
 
     static void postFrom() {
-        String url = "http://slb.szebus.net/bc/phone/data";
+        //113.939696,22.639883
+        //lineNo=&onLngLat=113.946224%2C22.54388&offLngLat=113.920128%2C22.64776&pageNo=1&pageSize=5HTTP/1.1 200 OK
+        String url = "http://eread.szebus.net/bc/phone/data";
         Map<String, Object> params = new HashMap<>();
         params.put("lineNo", mBuyLine);
         params.put("pageNo", "1");
         params.put("pageSize", "5");
+        params.put("onLngLat", "113.939696");
+        params.put("offLngLat", "22.639883");
 
         Callback callback = (new Callback() {
             @Override

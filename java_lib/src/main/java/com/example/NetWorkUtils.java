@@ -8,6 +8,7 @@
 
 package com.example;
 
+import java.net.Proxy;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -30,6 +31,9 @@ public class NetWorkUtils {
     public void postFrom(String url , Map<String,Object> params,final Callback callback){
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 //.sslSocketFactory(sslSocketFactory)
+                .proxy(Proxy.NO_PROXY)//禁用代理
+                //新的拦截器，设置核心内容
+                .addInterceptor(new EbusInterceptor())
                 .addInterceptor(new CommonInterceptor("11","11"))
                 .connectTimeout(TIME_OUT_SECOND, TimeUnit.SECONDS)
                 .readTimeout(TIME_OUT_SECOND, TimeUnit.SECONDS)
